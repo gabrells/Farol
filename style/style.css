@@ -3,14 +3,31 @@ body {
     background-color: rgb(2, 1, 17);
     font-family: 'Caveat', cursive;
     max-width: 1200px;
-    margin: 2rem;
     background-image: url(./svg/lighthouse.svg);
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: right;
 }
-article {
-    margin-top: 6rem;
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.written {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.wrapper {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+}
+.box {
     color: antiquewhite;
     font-size: 2rem;
     text-align: center;
@@ -35,10 +52,10 @@ article {
   cursor: pointer;
   z-index: 10;
   transition: all .1s linear;
+  color: #fcfbfa;
+  font-size: 1.5rem;
 }
-.fa-lightbulb-on {
-    color: aliceblue;
-}
+
 
 /* DIVISÃO PARA FOOTER */
 .footer {
