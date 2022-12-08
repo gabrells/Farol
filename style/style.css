@@ -25,12 +25,20 @@ p {
   color: antiquewhite;
   font-size: 2rem;
   position: absolute;
-  /* visibility: hidden; */
+  display: block;
 }
-
-.fa-regular {
+.btn-eyes {
+  width: 50px;
+  cursor: pointer;
+  background: none;
   color: antiquewhite;
 }
+
+.material-symbols-outlined {
+  outline: 20px;
+}
+  
+
 
 
 /* Divisão destina aos textos */
@@ -45,11 +53,14 @@ p {
 .visivel {
   visibility: visible;
 }
+.btn-eyes.acender {
+  color: yellowgreen;
+}
 .wrapper {
   position: relative;
   max-width: 800px;
   width: 100%;
-  opacity: 1%;
+  display: none;
  
 }
 
