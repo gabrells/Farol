@@ -1,3 +1,8 @@
+$('.btneyes').click(function(){
+  $('.wrapper').toggleClass('visivel');
+});
+
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
