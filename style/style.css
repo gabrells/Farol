@@ -26,12 +26,34 @@ p {
   font-size: 2rem;
   position: absolute;
   display: block;
+  /* animation: appear 5s;
+  opacity: 0;
+  animation: appear 2s forwards; */
 }
+
+@keyframes appear {
+  0% {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  100% {
+      opacity: 4;
+  }
+}
+
+
 .btn-eyes {
-  width: 50px;
   cursor: pointer;
   background: none;
   color: antiquewhite;
+}
+.btn-flash {
+  font-size: 1.5rem;
+  transition: all .5s linear;
+}
+.btn-flash:hover {
+  font-size: 2rem;
+  color: rgb(227, 172, 20);
 }
 
 .material-symbols-outlined {
@@ -53,15 +75,12 @@ p {
 .visivel {
   visibility: visible;
 }
-.btn-eyes.acender {
-  color: yellowgreen;
-}
+
 .wrapper {
   position: relative;
   max-width: 800px;
   width: 100%;
   display: none;
- 
 }
 
 .box {
@@ -69,7 +88,18 @@ p {
     font-size: 2rem;
     text-align: center;
     margin: auto;
-}
+    animation: appear 4s forwards;
+  }
+  
+  @keyframes appear {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+  }
 
 .link-citacao {
     text-decoration: none;
@@ -123,7 +153,6 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 
 /* DIVISÃO PARA FOOTER */

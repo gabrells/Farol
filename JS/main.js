@@ -22,7 +22,7 @@ slide
 
 
 
-
+let delay = -0.4;
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     grabCursor: true,
