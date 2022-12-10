@@ -1,15 +1,55 @@
 
+* {
+  max-width: auto;
+  max-height: 650px;
+  margin: 0px;
+
+}
 body {
-    background-color: rgb(2, 1, 17);
-    font-family: 'Caveat', cursive;
-    max-width: 1200px;
+    background-image: url(./png/cloud.png);
+    background-color: rgb(18, 2, 43);
+    font-family: 'Caveat', cursive; 
     background-image: url(./svg/lighthouse.svg);
-    background-size: 200px;
+    /* background-size: 200px; */
     background-repeat: no-repeat;
     background-position: right;
+    background-position-y: -60%;
 }
+.bg-clima {
+  position: absolute;
+  top: 150%;
+  z-index: 1;
+  width: 100%;
+  
+
+  
+ 
+}
+.move {
+  animation: move 5s infinite;
+  position: absolute;
+  top: 80%;
+  width: 50%;
+  
+
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px)
+  }
+  
+  50% {
+    transform: translateX(50px)
+  }
+  
+  100% {
+    transform: translateX(0px)
+  }
+}
+
 p {
   margin: 2rem;
+  mix-blend-mode: difference;
 }
 
 .container {
@@ -26,9 +66,9 @@ p {
   font-size: 2rem;
   position: absolute;
   display: block;
-  /* animation: appear 5s;
+  animation: appear 5s;
   opacity: 0;
-  animation: appear 2s forwards; */
+  animation: appear 2s forwards;
 }
 
 @keyframes appear {
@@ -46,9 +86,13 @@ p {
   cursor: pointer;
   background: none;
   color: antiquewhite;
+  position: absolute;
+  right: 120px;
+  
 }
 .btn-flash {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  align-items: center;
   transition: all .5s linear;
 }
 .btn-flash:hover {
@@ -60,8 +104,12 @@ p {
   outline: 20px;
 }
   
-
-
+/* Tentativa de sobrepor o texto á luz do farol */
+.luz {
+  background-image: url(./svg/light.svg);
+  background-repeat: no-repeat;
+  opacity: 1%;
+}
 
 /* Divisão destina aos textos */
 
@@ -153,6 +201,29 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* NUVEM */
+
+.fundo {
+  background-image: url(./png/cloud.jpg);
+  position: absolute;
+  bottom: 0;
+  width: 250.625em;
+  height: 43.75em;
+  animation: rotationLeft 80s linear infinite;
+  z-index: -10;
+}
+
+@keyframes rotationLeft {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+
+}
+
 
 
 /* DIVISÃO PARA FOOTER */
