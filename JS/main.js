@@ -45,6 +45,7 @@ buttons.forEach(btn => {
                 <cite><a href="https://www.instagram.com/tempofeio/" target="_blank" class="link-citacao">Tempo Feio</a></cite>
             </blockquote>
         </div>
+        
               <div class="box swiper-slide">
                 <blockquote id="texto">
                     <p>"Sou resultado <span></span>Das minhas escolhas <br>Dos pouses forçados <br>Dos dias ruins <br>Marcas de expressão <br>E marcas que não se expressam <br>A cabeça segue erguida <br>E o sangue corre quente <br>Nem sempre gosto do espelho <br>Mas admiro o que você vê <br>Quando olha pra mim."
