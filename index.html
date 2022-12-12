@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Swiper's CSS - Looping infinito -->
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,79 +11,80 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Playful page with slider control</title>
+    
 </head>
 <body>
-  <main>
-    <figure>
-      <!-- <img src="./style/svg/wave-bg.svg" class="bg-clima"> -->
-      <img src="./style/svg/movi-wave.svg" class="move">
-    </figure>
     
-    <section class="container">
-      <!-- <div class="fundo"></div> -->
-      
+    <section id="container">
+      <div>
+        <img src="./style/png/fumaça.png" class="nevoa">
+      </div>
       <div class="open-eyes">
         <h1>"O farol indica o caminho"</h1>
         <p>Acenda o sua luz...</p>
         <button class="btn-eyes"><span class="material-symbols-outlined btn-flash">offline_bolt</span></button>
       </div>
-        <div class="wrapper swiper mySwiper">
-            <div class="slide swiper-wrapper">
-              <div class="box swiper-slide luz">
-                <blockquote>
+        <div class="wrapper">
+          <div>
+            <img src="./style/svg/lighthouse.svg" class="bg">
+            <img src="./style/svg/wave.svg" class="wave">
+            <img src="./style/svg/wave-2.svg" class="wave2">
+            <img src="./style/svg/wind.svg" class="tavento">
+          </div>
+            <div class="slide">
+              <div class="box">
+                <blockquote id="texto">
                     <p>"Outros amaram em mim a mulher<br> A ti peço para amar<br> A sombra <br>Ama-me os fios de cabelo que caem <br>O farelo à ponta dos dedos <br>A poeira das unhas recém-lixadas <br>Ama na minha boca a palavra que nunca é dita <br>Ama nos meus livros aquele que achei num sebo <br>E que decidi comprar só pela dedicatória Datada de junho de 1732 <br>Ver a caligrafia de um morto desejando boa leitura <br>A outro morto <br>Duas mãos se encontrando assim, cobertas <br>De esquecimento e pó"
                     </p>
                     <cite class="citacao"><a href="https://www.instagram.com/marbecker1109/" target="_blank" class="citacao link-citacao">Mar Becker</a></cite>
                 </blockquote>
               </div>
-              <div class="box swiper-slide luz">
+              <div class="box swiper-slide">
                 <blockquote>    
-                <p>"A verdade <br>É que todos somos fogo <br>Ás vezes fagulha às vezes incêndio."
-                </p>
-                <cite><a href="https://www.instagram.com/tempofeio/" target="_blank" class="link-citacao">Tempo Feio</a></cite>
-            </blockquote>
+                
+            <!-- </blockquote>
         </div>
-              <div class="box swiper-slide luz">
-                <blockquote>
+              <div class="box swiper-slide">
+                <blockquote id="texto">
                 <p>"Paro nas esquinas <br>Entre faixas de pedestres <br>E imagino <br>Quantas saudades nasceram <br>No intervalo de um sinal vermeljo."
                 </p>
                 <cite><a href="https://www.instagram.com/tempofeio/" target="_blank" class="link-citacao">Tempo Feio</a></cite>
             </blockquote>
         </div>
-              <div class="box swiper-slide luz">
-                <blockquote>
+              <div class="box swiper-slide">
+                <blockquote id="texto">
                     <p>"Sou resultado <span></span>Das minhas escolhas <br>Dos pouses forçados <br>Dos dias ruins <br>Marcas de expressão <br>E marcas que não se expressam <br>A cabeça segue erguida <br>E o sangue corre quente <br>Nem sempre gosto do espelho <br>Mas admiro o que você vê <br>Quando olha pra mim."
                     </p>
                     <cite><a href="https://www.instagram.com/tempofeio/" target="_blank" class="link-citacao">Tempo Feio</a></cite>
                 </blockquote>
-              </div>
-              <!-- <div class="box swiper-slide">Slide 5</div>
+              </div> -->
+           <!-- <div class="box swiper-slide">Slide 5</div>
               <div class="box swiper-slide">Slide 6</div>
               <div class="box swiper-slide">Slide 7</div>
               <div class="box swiper-slide">Slide 8</div>
-              <div class="box swiper-slide">Slide 9</div> -->
+              <div class="box swiper-slide">Slide 9</div>
+            </div> -->
+            <div class="button">   
+              <button class="buttons_btn btn-left"><i class="fa-solid fa-circle-left"></i></button>
+              <button class="buttons_btn btn-right"><i class="fa-solid fa-circle-right"></i></button>
             </div>
-            <div class="btn-lighthouse swiper-button-next"></div>
-            <div class="btn-lighthouse swiper-button-prev"></div>
-            <!-- <div class="contagem swiper-pagination"></div> -->
           </div>
-          <div class="cloud"></div>
           
+         
           
 
 
     </section>
-  </main>
+   
 </body>
 <footer>
-    <div class="footer">
-      <a href="https://github.com/gabrells" target="_blank"><i class="fa-brands fa-github" alt="perfil do GitHub"></i></a>
-      <a href="https://www.linkedin.com/in/gabriell-santos/" target="_blank"><i class="fa-brands fa-linkedin" alt="Perfil do Linkedin"></i></a>
-    </div>
+  <div class="rede-social">
+    <a href="https://github.com/gabrells" target="_blank"><i class="fa-brands fa-github" alt="perfil do GitHub"></i></a>
+    <a href="https://www.linkedin.com/in/gabriell-santos/" target="_blank"><i class="fa-brands fa-linkedin" alt="Perfil do Linkedin"></i></a>
+  </div>
+  
   </footer>
 </div>
-<!-- Swiper JS -->
-<script src="./JS/swiper-bundle.min.js"></script>
 
 <script src="https://kit.fontawesome.com/2a56b62252.js" crossorigin="anonymous"></script> 
 <script src="./JS/main.js"></script>

@@ -1,63 +1,29 @@
 
 * {
-  max-width: auto;
+  max-width: 1200;
   max-height: 650px;
   margin: 0px;
-
 }
+
 body {
-    background-image: url(./png/cloud.png);
-    background-color: rgb(18, 2, 43);
-    font-family: 'Caveat', cursive; 
-    background-image: url(./svg/lighthouse.svg);
-    /* background-size: 200px; */
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: -60%;
+    background-color: rgb(12, 1, 24);
+    font-family: 'Caveat', cursive;
+    max-width: 1500px;  
+    box-sizing: border-box;
+    overflow: hidden;
+   
 }
-.bg-clima {
-  position: absolute;
-  top: 150%;
-  z-index: 1;
-  width: 100%;
-  
-
-  
- 
-}
-.move {
-  animation: move 5s infinite;
-  position: absolute;
-  top: 80%;
-  width: 50%;
-  
-
-}
-@keyframes move {
-  0% {
-    transform: translateX(0px)
-  }
-  
-  50% {
-    transform: translateX(50px)
-  }
-  
-  100% {
-    transform: translateX(0px)
-  }
-}
-
 p {
   margin: 2rem;
-  mix-blend-mode: difference;
 }
 
-.container {
-  height: 100vh;
+#container {
+  height: 150vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 /* Divisão para ideias ludicas */
@@ -70,7 +36,6 @@ p {
   opacity: 0;
   animation: appear 2s forwards;
 }
-
 @keyframes appear {
   0% {
       transform: translateY(20px);
@@ -87,7 +52,7 @@ p {
   background: none;
   color: antiquewhite;
   position: absolute;
-  right: 120px;
+  
   
 }
 .btn-flash {
@@ -100,52 +65,147 @@ p {
   color: rgb(227, 172, 20);
 }
 
-.material-symbols-outlined {
-  outline: 20px;
+  /* efeito nevoa */
+.nevoa {
+  opacity: 10%;
+  width: 250.625em;
+  height: 43.75em;
+  z-index: 1;
+  animation: nevoa 80s linear infinite;
+
 }
-  
-/* Tentativa de sobrepor o texto á luz do farol */
-.luz {
-  background-image: url(./svg/light.svg);
-  background-repeat: no-repeat;
-  opacity: 1%;
+@keyframes nevoa {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+
+}
+/* FAROL */
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 120%;
+  left: 55%;
+  animation: farol 5s;
+  animation: farol 4s forwards;
 }
 
+@keyframes farol {
+  0% {
+      transform: translateX(5px);
+      opacity: 0%;
+  }
+  100% {
+      opacity: 40%;
+  }
+}
+/* ONDAS */
+.wave {
+  width: 1000px;
+  position: absolute;
+  bottom: -20%;
+  left: 40%;
+  z-index: -1;
+  animation: move 5s;
+  animation: move 9.5s infinite;
+
+}
+@keyframes move {
+  0% {
+    transform: translateX(40px)
+  }
+  
+  50% {
+    transform: translateX(0px)
+  }
+  
+  100% {
+    transform: translateX(40px)
+  }
+}
+ .wave2 {
+  width: 1000px;
+  position: absolute;
+  bottom: -40%;
+  left: -60%;
+  z-index: -1;
+  animation: move2 5s;
+  animation: move2 10s infinite;
+
+}
+@keyframes move2 {
+  0% {
+    transform: translateX(40px)
+  }
+  
+  50% {
+    transform: translateX(0px)
+  }
+  
+  100% {
+    transform: translateX(40px)
+  }
+}
+
+/* VENTO */
+.tavento {
+  opacity: 20%;
+  width: 250%;
+  position: absolute;
+  top: 10%;  
+  left: -80%;
+  animation: vento 80s linear infinite;
+
+}
+@keyframes vento {
+  0% {
+    transform: translateZ(10);
+  }
+  100% {
+    transform: translate3d(-25%,0,0);
+  }
+
+}
+
+ 
 /* Divisão destina aos textos */
 
-.written {
-  position: relative;
-  max-width: 900px;
-  width: 100%;
-  padding: 50px 0;
-  overflow: hidden;
-}
-.visivel {
-  visibility: visible;
+.inicio {
+  display: none;
 }
 
 .wrapper {
-  position: relative;
+  margin-top: 100px;
+  position: absolute;
   max-width: 800px;
   width: 100%;
   display: none;
 }
 
 .box {
-    color: antiquewhite;
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-    animation: appear 4s forwards;
+  padding: auto;
+  height: 500px;
+  opacity: 0%;
+  color: antiquewhite;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  animation: appear 10s forwards;
+  animation-delay: 2s;
+  /* mix-blend-mode: difference; */
   }
   
   @keyframes appear {
     0% {
         transform: translateY(5px);
-        opacity: 0;
+        opacity: 0%;
+        
     }
     100% {
-        opacity: 100;
+        opacity: 100%;
     }
   }
 
@@ -160,77 +220,57 @@ p {
     color: rgb(227, 172, 20);
 }
 
-.btn-lighthouse {
-  width: auto;
-  height: 60%;
-  margin-top: 2rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  transition: all .1s linear;
-  color: rgb(248, 230, 207);
-  font-size: 1.5rem;
+.button-left {
+  background: none;
 }
-
-     
 
 
 /* DIVISÃO DO LOOPING */
-.swiper {
-  width: 100%;
-  height: 100%;
+
+.button {
+ 
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 43.5%;
+}
+.buttons_btn {
+  background: none;
+  border: none;
+  margin: 10px;
+  
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.fa-solid {
+  color:rgb(244, 214, 175);
+  width: 30px;
+  height: 30px;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+  cursor: pointer;
   align-items: center;
 }
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
+.fa-solid:hover {
+  color: rgb(234, 185, 125);
+  font-size: 2.2rem;
+  opacity: 70%;
 }
-
-/* NUVEM */
-
-.fundo {
-  background-image: url(./png/cloud.jpg);
-  position: absolute;
-  bottom: 0;
-  width: 250.625em;
-  height: 43.75em;
-  animation: rotationLeft 80s linear infinite;
-  z-index: -10;
-}
-
-@keyframes rotationLeft {
-  0% {
-    transform: translateZ(0);
-  }
-  100% {
-    transform: translate3d(-50%,0,0);
-  }
-
-}
-
-
 
 /* DIVISÃO PARA FOOTER */
-.footer {
+footer {
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+}
+.rede-social {
     text-align: center;
     padding-bottom: 10px;
-    margin: 30px;
+    /* margin: 30px; */
   }
   .fa-brands {
     width: 30px;
