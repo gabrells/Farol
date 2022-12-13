@@ -40,17 +40,12 @@ buttons.forEach(btn => {
         comment.classList.add('comment')
         comment.innerHTML = `
       
-                <p>"Paro nas esquinas <br>Entre faixas de pedestres <br>E imagino <br>Quantas saudades nasceram <br>No intervalo de um sinal vermeljo."
-                </p>
-                <cite><a href="https://www.instagram.com/tempofeio/" target="_blank" class="link-citacao">Tempo Feio</a></cite>
-            </blockquote>
-        </div>
-        
-              <div class="box swiper-slide">
-                <blockquote id="texto">
-                    <p>"Sou resultado <span></span>Das minhas escolhas <br>Dos pouses forçados <br>Dos dias ruins <br>Marcas de expressão <br>E marcas que não se expressam <br>A cabeça segue erguida <br>E o sangue corre quente <br>Nem sempre gosto do espelho <br>Mas admiro o que você vê <br>Quando olha pra mim."
-                    </p>
-                    <cite><a href="https://www.instagram.com/tempofeio/" target="_blank" class="link-citacao">Tempo Feio</a></cite>
+        <blockquote>    
+        <p>"A utopia está lá no horizonte.<br> Me aproximo dois passos, ela se afasta dois passos. <br>Caminho dez passos e o horizonte corre dez passos.<br>Por mais que eu caminhe, jamais alcançarei.<br>Para que serve a utopia? <br>Serve para isso:<br> Para que eu não deixe de caminhar."
+        </p>
+        <cite><a href="https://en.wikipedia.org/wiki/Fernando_Birri" target="_blank" class="link-citacao">Fernando Birri</a></cite>
+    </blockquote>
+</div>
                 
         `
         
