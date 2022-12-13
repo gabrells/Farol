@@ -1,4 +1,4 @@
-<h1 aling="center"> Playful page with slider control</h1>
+<h1 aling="center"> Faroll</h1>
 
 -- Em construção
 
